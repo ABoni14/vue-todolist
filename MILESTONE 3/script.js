@@ -37,7 +37,7 @@ const app = new Vue({
     },
 
     insertItem(){
-      if(this.stringToDo.length < 2) {
+      if(this.stringToDo.frase.length < 2) {
         this.errorMsg = true;
         setTimeout(() =>{
           this.errorMsg = false;
