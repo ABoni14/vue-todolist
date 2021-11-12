@@ -28,19 +28,19 @@
       <button class="btn btn-dark">AGGIUNGI</button>
     <ul>
       <li 
-        v-for="(item, index) in todoList2"
+        v-for="(item, index) in todoList"
         >
         <p 
         @click="item.isUnderscore = !item.isUnderscore" 
         :class="{underscore : item.isUnderscore}"
         >{{item.frase}}</p>
-        <i class="fas fa-times"></i>
+        <i @click="removeItem(index)" class="fas fa-times"></i>
       </li>
     </ul>
     </div>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="MILESTONE 1/script.js"></script>
+  <script src="MILESTONE 2/script.js"></script>
 </body>
 </html>
